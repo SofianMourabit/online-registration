@@ -154,7 +154,6 @@ input{
 }
 
 .flex-outer {
-  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -173,16 +172,6 @@ input{
 .flex-outer > li:not(:last-child),
 .flex-inner > li:not(:last-child) {
   margin-bottom: 10px;
-}
-.flex-outer > li > label,
-.flex-outer li p {
-  flex: 1 0 120px;
-  max-width: 220px;
-}
-
-.flex-outer > li > label + *,
-.flex-inner {
-  flex: 1 0 220px;
 }
 
 .flex-outer li p {
@@ -216,5 +205,15 @@ Media Queries
   main,
   footer {
     width: 50%;
+  }
+
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 30%;
+  }
+
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 70%;
   }
 }
