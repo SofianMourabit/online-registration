@@ -18,8 +18,7 @@ ul {
   list-style: none;
 }
 p {
-  margin-top: 0px;
-  color: #7f7f7f
+  color: #7f7f7f;
 }
 h1,
 h2,
@@ -94,19 +93,23 @@ label {
 footer p {
     padding: 2em;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+#name::-webkit-input-placeholder,
+#email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   text-align: end;
   font-style: italic;
 }
-::-moz-placeholder { /* Firefox 19+ */
+#name::-moz-placeholder,
+#email::-webkit-input-placeholder { /* Firefox 19+ */
   text-align: end;
   font-style: italic;
 }
-:-ms-input-placeholder { /* IE 10+ */
+#name:-ms-input-placeholder,
+#email::-webkit-input-placeholder { /* IE 10+ */
   text-align: end;
   font-style: italic;
 }
-:-moz-placeholder { /* Firefox 18- */
+#name:-moz-placeholder,
+#email::-webkit-input-placeholder { /* Firefox 18- */
   text-align: end;
   font-style: italic;
 }
@@ -138,7 +141,11 @@ textarea {
 }
 input:focus {
     outline: none;
-    border: 2px solid #46698b;
+    background-color: #46698b;
+}
+input{
+    -webkit-transition: background-color 4s ;
+    transition: background-color 4s;
 }
 .flex-outer,
 .flex-inner {
@@ -198,7 +205,7 @@ input:focus {
   letter-spacing: .09em;
   border-radius: 2px;
 }
-.flex-inner p{
+fieldset p{
   text-align: left;
 }
 /* =================================

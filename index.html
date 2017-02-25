@@ -24,23 +24,23 @@
       <fieldset class="contact">
         <legend>Contact Information</legend>
         <ul class="flex-outer">
-          <li><label for="name" class="col">Full Name</label>
-            <input type="text" class="col" name="name" id="name" placeholder="Required">
+          <li><label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Required" required="">
           </li>
-          <li><label for="email" class="col">Email Address</label>
-            <input type="email" class="col" name="email" id="email" placeholder="Required">
+          <li><label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Required" required="">
           </li>
-          <li><label for="phone" class="col">Phone Number</label>
-            <input type="tel" class="col" name="phone" id="phone">
+          <li><label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="(123) 456-7890">
           </li>
-          <li><label for="address" class="col">Street Address</label>
-            <input type="text" class="col" name="address" id="address">
+          <li><label for="address">Street Address</label>
+            <input type="text" name="address" id="address" placeholder="Street address">
           </li>
-          <li><label for="city" class="col">City</label>
-            <input type="text"  class="col"name="city" id="city">
+          <li><label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="City">
           </li>
-          <li><label for="state" class="col">State</label>
-            <select name="state" id="state" class="col">
+          <li><label for="state">State</label>
+            <select name="state" id="state">
               <option value="" disabled selected>Choose State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -95,35 +95,35 @@
               <option value="WY">Wyoming</option>
             </select>
           </li>
-          <li><label for="zipcode" class="col">Zip code</label>
-            <input type="text" class="col" name="zipcode" id="zipcode">
+          <li><label for="zipcode">Zip code</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="Zip code">
           </li>
         </ul>
       </fieldset>
       <hr>
       <fieldset>
         <legend>Newsletter</legend>
-        <ul class="flex-inner">
           <p>Select the newsletters you would like to receive</p>
-
-          <li><label><input type="checkbox" name="html" id="html" value="HTML" checked> HTML News</label></li>
-          <li><label><input type="checkbox" name="css" id="css" value="CSS"> CSS News</label></li>
-          <li><label><input type="checkbox" name="javascript" id="javascript" value="Javascript"> Javascript News</label></li>
-
+          <ul class="flex-inner">
+            <li><label><input type="checkbox" name="html" id="html" value="HTML" checked> HTML News</label></li>
+            <li><label><input type="checkbox" name="css" id="css" value="CSS"> CSS News</label></li>
+            <li><label><input type="checkbox" name="javascript" id="javascript" value="Javascript"> Javascript News</label></li>
+          </ul>
           <p>Newsletter format</p>
-          <li><label><input type="radio" name="format" id="htmlformat" value="HTML" checked> HTML</label></li>
-          <li><label><input type="radio" name="format" id="plaintext" value="Plain text"> Plain Text</label></li>
-          <li>
-            <p>Other topics you'd like to hear about</p>
-            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
-          </li>
-        </ul>
-            <input type="submit" name="signup" id="signup" value="Sign Up">
-          </fieldset>
-        </form>
-      </main>
-      <footer class="main-footer">
-        <p>Copyright The Code Review</p>
-      </footer>
-    </body>
-    </html>
+          <ul class="flex-inner">
+            <li><label><input type="radio" name="format" id="htmlformat" value="HTML" checked> HTML</label></li>
+            <li><label><input type="radio" name="format" id="plaintext" value="Plain text"> Plain Text</label></li>
+            <li>
+              <p>Other topics you'd like to hear about</p>
+              <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+            </li>
+          </ul>
+          <input type="submit" name="signup" id="signup" value="Sign Up">
+        </fieldset>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <p>Copyright The Code Review</p>
+    </footer>
+  </body>
+  </html>
