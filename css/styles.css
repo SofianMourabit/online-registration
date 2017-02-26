@@ -97,21 +97,29 @@ footer p {
 #email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   text-align: end;
   font-style: italic;
+  padding-right: 10px;
+  font-size: 0.75rem;
 }
 #name::-moz-placeholder,
 #email::-webkit-input-placeholder { /* Firefox 19+ */
   text-align: end;
   font-style: italic;
+  padding-right: 10px;
+  font-size: 0.75rem;
 }
 #name:-ms-input-placeholder,
 #email::-webkit-input-placeholder { /* IE 10+ */
   text-align: end;
   font-style: italic;
+  padding-right: 10px;
+  font-size: 0.75rem;
 }
 #name:-moz-placeholder,
 #email::-webkit-input-placeholder { /* Firefox 18- */
   text-align: end;
   font-style: italic;
+  padding-right: 10px;
+  font-size: 0.75rem;
 }
 .contact input,.contact select, textarea, input#signup {
     overflow: visible;
@@ -139,14 +147,21 @@ select#state {
 textarea {
     resize: none;
 }
-input:focus {
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
     outline: none;
     background-color: #46698b;
 }
-input{
+textarea:focus {
+    color: #fff;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea{
     -webkit-transition: background-color 4s ;
     transition: background-color 4s;
 }
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    background: #46698b;
+}
+
 .flex-outer,
 .flex-inner {
   list-style-type: none;
@@ -196,6 +211,21 @@ input{
 }
 fieldset p{
   text-align: left;
+}
+input[type="checkbox"], input[type="radio"] {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border: solid 2px #2d3944;
+    background-color: transparent;
+    margin: 1rem 1rem 0 0;
+    vertical-align: text-bottom;
+}
+input[type="checkbox"]{
+  border-radius: 5px;
+}
+input[type="radio"]{
+  border-radius: 50%;
 }
 /* =================================
 Media Queries
