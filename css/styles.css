@@ -151,17 +151,16 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, te
     outline: none;
     background-color: #46698b;
 }
-textarea:focus {
-    color: #fff;
-}
 input[type="text"], input[type="email"], input[type="tel"], textarea{
     -webkit-transition: background-color 4s ;
     transition: background-color 4s;
 }
+textarea:focus {
+    color: #fff;
+}
 input[type="checkbox"]:checked, input[type="radio"]:checked {
     background: #46698b;
 }
-
 .flex-outer,
 .flex-inner {
   list-style-type: none;
